@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米</title>
+    <!-- 引入字体图标样式 -->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <!-- 引入swiper插件样式 -->
+    <link rel="stylesheet" href="lib/swiper/css/swiper.css">
+    <link rel="stylesheet/less" href="less/index.less">
+
+
+    <script src='lib/less/less.js'></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div id="header">
+        <!-- 头部搜索 -->
+        <div class="header-wrapper">
+            <a href="#" class='icon-logo'>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAyCAYAAAD2vz2aAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjQ2OUE2MkU0RTQ4MTFFNzgxOTZBRDJFQjk4Qjk0NjQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjQ2OUE2MkY0RTQ4MTFFNzgxOTZBRDJFQjk4Qjk0NjQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCOUQ0QkM2RjREQ0MxMUU3ODE5NkFEMkVCOThCOTQ2NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCOUQ0QkM3MDREQ0MxMUU3ODE5NkFEMkVCOThCOTQ2NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiL8gcIAAAF1SURBVHja7Ju/LwRRFEbf+FVsQ0dBdJKNSksUSqVCr6AhKxGVwn+gVUpQEI1So5XoZUOhEbKMDiESIeOTzPbvzpoxz5wvOd3duzsn++7cSXajZMU9OOeGXPmTiHtxIU7FoYh/oe+ZmPKsjSMJS1yY+RS7YrNDcTdi1Le4y4WbHrEorsRcUW8asrB2BsSxWEeYLVtiCWG2bIsJhPmnV+zkeV3/TZhLv2HzCLNlFWG2TIqRvHYZa97FR84XXEvnUSeZEft/LexZDIvXnIVFop6uCQ3RnaHHeBmO5FMBstrPjZdiTUyLlww9Bqs6w87FcobX9Vd56B+IZoZjXVlhP0f0qAwfJKS1ookw+w0HYaEFYQVs+j4ZE7Oed6o3sVfA00OphW2IBUN9S5xU+Uhad6A+ZhhDnyAMYQhDGMIQRhCGMIQhDGEEYQhDGMIQhjCCMIQhDGEIIwhDWFHCLP81vPOsezT0/BK3nj0tP1i59qxrGXrG3wIMAK5yNsqRAjAyAAAAAElFTkSuQmCC"
+                    alt="">
+            </a>
+            <form class='search' action="#">
+                <i class="icon-search"></i>
+                <input type="search" placeholder="搜索商品名称">
+            </form>
+            <a href="#" class='user'>
+                <i class='iconfont icon-yonghu'></i>
+            </a>
+        </div>
+        <!-- 头部导航 -->
+        <div class="header-nav">
+            <div class="nav-display">
+                <i class='iconfont icon-xiangxiajiantou'></i>
+            </div>
+            <div class="nav-item-layer" style="display:none">
+                <div class="title">全部</div>
+                <div class="btn-wrap">
+                    <span class="extra-btn current">推荐</span>
+                    <span class="extra-btn">手机</span>
+                    <span class="extra-btn ">电视</span>
+                    <span class="extra-btn ">智能</span>
+                    <span class="extra-btn ">笔记本</span>
+                    <span class="extra-btn ">家电</span>
+                    <span class="extra-btn ">新款游戏本</span>
+                    <span class="extra-btn">双摄</span>
+                    <span class="extra-btn ">全面屏</span>
+                    <span class="extra-btn ">生活周边</span>
+                    <span class="extra-btn ">盒子</span>
+                </div>
+            </div>
+            <div class="nav clearfix">
+                <ul>
+                    <li class="nav-item active">
+                        <a href="#">推荐</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">手机</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">电视</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">智能</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">笔记本</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">家电</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">新款笔记本</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">双摄</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">全面屏</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">生活周边</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">盒子</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mark"></div>
+    <!-- 轮播图 -->
+    <div id="slide">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="//i8.mifile.cn/v1/a1/25f8a23f-de0e-c948-3d71-90238ec37e7a!720x360.webp" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="//i8.mifile.cn/v1/a1/0dce779d-893c-8806-85ac-ce7b2b665faa!720x360.webp" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="//i8.mifile.cn/v1/a1/331df605-2f0c-2f4b-a96e-9806f698726c!720x360.webp" alt=""></a></div>
+            </div>
+                <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- 导航区域 -->
+    <div id="nav">
+        <a href="#">
+            <img src="//i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+        </a>
+        <a href="#">
+            <img src="//i8.mifile.cn/v1/a1/d29e748c-0177-5b4c-d2ab-401070713bac!144x152.webp" alt="">
+        </a>
+        <a href="#">
+            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/9173298cc0297ce1803c43485e525358.jpg?thumb=1&w=144&h=152" alt="">
+        </a>
+        <a href="#">
+            <img src="//i8.mifile.cn/v1/a1/e560f98a-48bb-25a1-daa2-72bff8cc7c69!144x152.webp" alt="">
+        </a>
+        <a href="#">
+            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3df8f589521ea019b3b2d6231af17926.png?thumb=1&w=144&h=152" alt="">
+        </a>
+    </div>
+    <!-- 主体区域 -->
+    <div id="main">
+        <!-- 产品一 -->
+        <div class="product1">
+            <div class="left">
+                <a href="#" class='border-right'>
+                    <img src="//i8.mifile.cn/v1/a1/45f1e726-9a1c-c2e2-881f-93d215e08a44!358x508.webp" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <a href="#" class='border-bottom'>
+                    <img src="//i8.mifile.cn/v1/a1/23953b08-0df3-061a-976b-edc6f9cc3db9!358x252.webp" alt="">
+                </a>
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/f4625925-e0be-95b3-0b3b-de75a8f7dd06!358x252.webp" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="recommend">
+            <div class="product2 screenWidth">
+                <a href="#">
+                    <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/852762f49eb129efb02628f276ddb00f.jpg?thumb=1&w=720&h=280" alt="">
+                </a>
+            </div>
+            <!-- 超值推荐 -->
+            <div class="product3 screenWidth">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/541f4d13-2a5f-27a5-ff46-f180e5443f17!720x440.webp" alt="">
+                </a>
+            </div>
+            <div class="product4 comment-product">
+                <a href="#" class='left sign border-right'>
+                    <img src="//i8.mifile.cn/v1/a1/1c3e0097-73a6-1788-96f7-2cdb58d82ba1!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">小米8 青春版</div>
+                        <div class="brief">潮流镜面渐变色,自拍旗舰</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>1399
+                                <span>起</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class='sign right'>
+                    <img src="//i8.mifile.cn/v1/a1/5c55b30b-abd9-3a52-7f8b-7322d288835d!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">小米8 屏幕指纹版</div>
+                        <div class="brief">压感屏幕指纹,潮流外观</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>3199
+                                <span>起</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product4 comment-product">
+                <a href="#" class='left sign cheap border-right'>
+                    <img src="//i8.mifile.cn/v1/a1/a081da10-3758-e051-7a20-0de017f37476!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">红米6</div>
+                        <div class="brief">小屏高性能的双摄手机</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>749
+                                <span>起</span>
+                                <del>¥799</del>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class=' right'>
+                    <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3ba9490bd6d7dec5d29e45435692b4fe.jpg?thumb=1&w=360&h=360" alt="">
+                    <div class="info">
+                        <div class="name">红米Note5</div>
+                        <div class="brief">红米国民品质,拍照专家</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>969
+                                <span>起</span>
+                                <del>¥1099</del>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product4 comment-product">
+                <a href="#" class='left cheap sign border-right'>
+                    <img src="//i8.mifile.cn/v1/a1/a14a8cc3-3f47-3224-d221-8ff8485d624d!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">小米8 SE</div>
+                        <div class="brief">三星AMOLED 全面屏 小屏旗舰</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>1649
+                                <span>起</span>
+                                <del>¥1799</del>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class='right'>
+                    <img src="//i8.mifile.cn/v1/a1/685330bb-cb82-c3c3-e3cf-106c9b9a70e6!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">小米平板4</div>
+                        <div class="brief">追剧神器/支持AI人脸识别</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>1099
+                                <span>起</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product4 comment-product">
+                <a href="#" class='left sign cheap6 border-right'>
+                    <img src="//i8.mifile.cn/v1/a1/dbf22834-b9e2-d453-24a8-1a4f7e7dc702!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">小米MIX 2S</div>
+                        <div class="brief">陶瓷机身 手机中的艺术品</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>2699
+                                <span>起</span>
+                                <del>¥3299</del>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class='right'>
+                    <img src="//i8.mifile.cn/v1/a1/2d89504d-f610-a317-b67c-2d7f35d617fe!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">小米Max 2</div>
+                        <div class="brief">6.44"大屏,53000mAh大电量</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>1699</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product4 comment-product">
+                <a href="#" class='left  border-right'>
+                    <img src="//i8.mifile.cn/v1/a1/749d3702-8a82-003a-34ee-12a39dfb1795!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">红米6 Pro</div>
+                        <div class="brief">高颜值大电量 红米旗舰</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>869
+                                <span>起</span>
+                                <del>¥999</del>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class='right sign cheap3'>
+                    <img src="//i8.mifile.cn/v1/a1/d5c8ea24-5290-46e0-8064-7634b4cbad70!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">红米自拍手机</div>
+                        <div class="brief">1600万像素自拍手机</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>899
+                                <span>起</span>
+                                <del>¥999</del>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product4 comment-product">
+                <a href="#" class='left cheap2 sign border-right'>
+                    <img src="//i8.mifile.cn/v1/a1/f8efd47d-5282-a4bd-cafb-23bcda50e87a!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">小米Max 3</div>
+                        <div class="brief">大屏大电量 震感世界</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>1699
+                                <span>起</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class='right sign cheap'>
+                    <img src="//i8.mifile.cn/v1/a1/a14a8cc3-3f47-3224-d221-8ff8485d624d!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">小米8 SE</div>
+                        <div class="brief">三星AMOLED 全面屏 小屏旗舰</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>1649
+                                <span>起</span>
+                                <del>¥1799</del>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- 小米电脑区域 -->
+        <div class="computer screenWidth">
+            <a href="#">
+                <img src="//i8.mifile.cn/v1/a1/217a2014-4900-6997-6fea-19c9cb6d9ec4!720x280.webp" alt="">
+            </a>
+        </div>
+        <!-- 小米电视区域 -->
+        <div class="tel">
+            <div class="tel-main screenWidth border-bottom">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/bd232994-3179-3bdb-1fee-dea8bfe0ffbd!720x440.webp" alt="">
+                </a>
+            </div>
+            <div class="comment-product">
+                <a href="#" class='left sign border-right'>
+                    <img src="//i8.mifile.cn/v1/a1/d342ccbf-e3d6-2dcc-47a3-18656f28a0cc!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">小米电视4A 32英寸</div>
+                        <div class="brief">64位处理器,高清智能电视</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>879
+                                <del>¥999</del>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class='sign right'>
+                    <img src="//i8.mifile.cn/v1/a1/6017d231-019c-a76d-e54a-0bb6948bfd0d!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">43"电视4A青春版</div>
+                        <div class="brief">全高清屏,人工智能语音</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>1399
+                                <del>¥1699</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="comment-product">
+                <a href="#" class='left sign border-right'>
+                    <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5014d1a59bf76ae55d79fe930c8de7f4.jpg?thumb=1&w=360&h=360" alt="">
+                    <div class="info">
+                        <div class="name">小米电视4A 50英寸</div>
+                        <div class="brief">4K HDR,人工智能语音系统</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>1899
+                                <del>¥2199</del>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class='sign right'>
+                    <img src="//i8.mifile.cn/v1/a1/05651ed0-22d2-de3b-4e79-4a39a079136e!360x360.webp" alt="">
+                    <div class="info">
+                        <div class="name">小米电视4X 55英寸</div>
+                        <div class="brief">4K HDR,人工智能语音系统</div>
+                        <div class="price">
+                            <p>
+                                <span>¥</span>2299
+                                <del>¥2799</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <a href="#" class='more'>更多小米电视产品></a>
+        </div>
+        <!-- 秒杀区域 -->
+        <div class="seckill">
+            <div class="seckill-title screenWidth">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/bf276f5a-8cbe-3ebd-d979-1654f407b0f0!720x280.webp" alt="">
+                </a>
+            </div>
+            <div class="seckill1">
+                <a href="#" class='border-right'>
+                    <img src="//i8.mifile.cn/v1/a1/46c44f3e-479d-a999-dd2d-98fb39b51e17!358x480.webp" alt="">
+                </a>
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/f938ae9f-e54a-1fa1-a52d-62dfe534b579!358x480.webp" alt="">
+                </a>
+            </div>
+            <div class="seckill1 border-top">
+                <a href="#" class='border-right'>
+                    <img src="//i8.mifile.cn/v1/a1/1a8f5c31-f50c-5be0-3df0-f2c5c839e345!358x480.webp" alt="">
+                </a>
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/8cfcd654-4af5-9ae6-c6cc-1ba9d28be8e8!358x480.webp" alt="">
+                </a>
+            </div>
+            <div class="seckill1 border-top">
+                <a href="#" class='border-right'>
+                    <img src="//i8.mifile.cn/v1/a1/52866372-7fe5-76c2-29a0-9ae32d07b8ff!358x480.webp" alt="">
+                </a>
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/d55778b9-7144-2d36-1450-694b8a47b9db!358x480.webp" alt="">
+                </a>
+            </div>
+            <div class='seckill-more  screenWidth'>
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/374ca986-5057-9dca-8bc5-b45371b5ec38!720x280.webp" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- 了解小米区域 -->
+        <div class="miInfo screenWidth">
+            <a href="#">
+                <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/bbb5bac8089d890338b5bf8ff742cbbc.png?thumb=1&w=720&h=106" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- 底部区域 -->
+    <div id="footer">
+        <a href="#" class='active'>
+            <i class='iconfont icon-shouye'></i>
+            <span>首页</span>
+        </a>
+        <a href="#">
+            <i class='iconfont iconfont icon-fenlei'></i>
+            <span>分类</span>
+        </a>
+        <a href="#">
+            <i class='iconfont icon-tubiaolunkuo-'></i>
+            <span>购物车</span>
+        </a>
+        <a href="#">
+            <i class='iconfont icon-yonghu'></i>
+            <span>我的</span>
+        </a>
+    </div>
+
+    <!-- 引入Swiper的样式 -->
+    <script src='lib/swiper/js/swiper.js'></script>
+    <!-- 引入jQuery -->
+    <script src='lib/jquery/jquery.js'></script>
+    <!--自己的js -->
+    <script src='js/index.js'></script>
+</body>
+</html>
